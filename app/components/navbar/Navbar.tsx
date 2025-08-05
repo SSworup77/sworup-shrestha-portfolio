@@ -15,18 +15,34 @@ const Navbar = () => {
 	];
 	const [hovered, setHovered] = useState<number | null>(null);
 	const { scrollY } = useScroll();
-    useMotionValueEvent(scrollY, "change", (latest) => {
-        console.log("Scroll position:", latest);
-    })
+	const [scrolled, setscrolled] = useState<boolean>(false);
+	useMotionValueEvent(scrollY, "change", (latest) => {
+		if (latest > 20) {
+			setscrolled(true);
+		} else {
+			setscrolled(false);
+		}
+	});
 	return (
 		<Container>
-			<motion.nav className="flex items-center justify-between p-2">
+			<motion.nav
+				animate={{
+					boxShadow: scrolled ? "var(--shadow-aceternity)" : "none",
+					width:scrolled?"50%":"100%",
+					y:scrolled?10:0,
+				}}
+				transition={{ 
+					duration: 0.3,
+					ease:"easeInOut",
+				 }}
+				className="flex fixed inset-x-0 top-0 max-w-5xl mx-auto items-center rounded-full justify-between p-2"
+			>
 				<Image
 					src="/profile.jpg"
 					height={100}
 					width={100}
 					alt="Profile"
-					className="rounded-xl h-15 w-15"
+					className="rounded-full h-15 w-15"
 				/>
 				<div className="flex items-center gap-5">
 					{navItems.map((item, idx) => (
