@@ -1,16 +1,20 @@
 import Image from "next/image";
 import Container from "./components/container";
+import Projects from "./components/Projects";
 
 export default function Home() {
 	return (
 		<div className="flex min-h-screen items-start justify-start">
 			<Container className="min-h-[200vh] p-4 md:p-10">
-				<h1 className="font-bold tracking-tight text-2xl md:text-4xl mt-10 text-primary">Hello there!</h1>
+				<h1 className="font-bold tracking-tight text-2xl md:text-4xl sm:text-3xl sm:mt-16 md:mt-14 text-primary">
+					Hello there!
+				</h1>
 				<p className="text-secondary text-sm md:text-base pt-4 max-w-xl">
-					I am a eager learning passionate problem solver who loves to build
+					I am an eager learner, passionate problem solver who loves to build
 					things with code. I am currently learning Next.js and exploring its
 					capabilities.
 				</p>
+				<Projects />
 			</Container>
 		</div>
 	);
