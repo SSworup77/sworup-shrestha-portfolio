@@ -35,7 +35,7 @@ const Navbar = () => {
 					duration: 0.3,
 					ease: "easeInOut",
 				}}
-				className="flex fixed inset-x-0 top-0 max-w-5xl mx-auto items-center rounded-full justify-between p-2 backdrop-blur-sm bg-neutral/50"
+				className="flex fixed inset-x-0 top-0 max-w-5xl mx-auto items-center rounded-full justify-between p-2 z-10 backdrop-blur-sm bg-neutral/50"
 			>
 				<Image
 					src="/profile.jpg"
