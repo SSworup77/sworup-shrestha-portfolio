@@ -11,14 +11,17 @@ export default function Home() {
 					Hello there!
 				</h1>
 				<p className="text-secondary text-sm md:text-base pt-4 max-w-xl">
-					I am Sworup, an eager learner, passionate problem solver who loves to build
-					things with code. I love working on various projects, from simple websites to complex applications that challenge my skills and creativity.
+					I am Sworup, an eager learner, passionate problem solver who loves to
+					build things with code. I love working on various projects, from
+					simple websites to complex applications that challenge my skills and
+					creativity.
 				</p>
 				<p className="text-secondary text-sm md:text-base pt-4 max-w-xl">
-					When I am not coding, you can find me exploring new technologies, reading books, or painting.
+					When I am not coding, you can find me exploring new technologies,
+					reading books, or painting.
 				</p>
+				<TechStack />
 				<Projects />
-				<TechStack/>
 			</Container>
 		</div>
 	);

@@ -11,7 +11,7 @@ const Projects = () => {
 			<div className={cn("text-secondary md:mt-2")}>
 				I love building fun things here are some of my works
 			</div>
-			<div className="md:mt-6 grid grid-cols-3">
+			<div className="md:mt-6 grid md:grid-cols-3 sm:grid-cols-1 sm:flex-row sm:items-center sm:justify-center sm:gap-4 xs:grid-cols-1 xs:flex-row xs:items-center xs:justify-center xs:gap-4">
 				<CardFlip
 					title="Edusity Landing page"
 					subtitle="A Landing page for educational institute"

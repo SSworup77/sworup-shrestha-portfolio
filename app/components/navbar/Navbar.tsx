@@ -42,7 +42,7 @@ const Navbar = () => {
 					height={100}
 					width={100}
 					alt="Profile"
-					className="rounded-full sm:h-12 sm:w-12 md:h-15 md:w-15"
+					className="rounded-full sm:h-12 sm:w-12 md:h-15 md:w-15 xs:h-10 xs:w-10"
 				/>
 				<div className="hidden md:flex items-center sm:flex">
 					{navItems.map((item, idx) => (
