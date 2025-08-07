@@ -8,7 +8,6 @@ import { motion, useMotionValueEvent, useScroll } from "motion/react";
 const Navbar = () => {
 	const navItems = [
 		{ title: "Home", href: "/" },
-		{ title: "About", href: "/about" },
 		{ title: "Projects", href: "/projects" },
 		{ title: "Contact", href: "/contact" },
 		{ title: "Blog", href: "/blog" },
@@ -35,14 +34,14 @@ const Navbar = () => {
 					duration: 0.3,
 					ease: "easeInOut",
 				}}
-				className="flex fixed inset-x-0 top-0 max-w-5xl mx-auto items-center rounded-full justify-between p-2 z-10 backdrop-blur-sm bg-neutral/50"
+				className="flex fixed inset-x-0 top-0 max-w-4xl mx-auto items-center rounded-full justify-between p-2 z-10 backdrop-blur-sm bg-neutral/50"
 			>
 				<Image
 					src="/profile.jpg"
 					height={100}
 					width={100}
 					alt="Profile"
-					className="rounded-full sm:h-12 sm:w-12 md:h-15 md:w-15 xs:h-10 xs:w-10"
+					className="rounded-full sm:h-12 sm:w-12 h-15 w-15 xs:h-7 xs:w-7"
 				/>
 				<div className="hidden md:flex items-center sm:flex">
 					{navItems.map((item, idx) => (

@@ -74,7 +74,7 @@ export default function CardFlip({
 						<Image
 							src={image}
 							alt="Edusity Project"
-							width={250}
+							width={230}
 							height={200}
 							className="rounded-md pb-25"
 						/>

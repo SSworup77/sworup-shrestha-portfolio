@@ -6,12 +6,12 @@ const Projects = () => {
 		{ image: "/edusity-project.png", title: "Edusity Landing page" },
 	];
 	return (
-		<div className="md:mt-10 mt-6 ">
+		<div className="mt-10 sm:mt-6 ">
 			<div className="font-bold text-2xl text-primary">Projects</div>
-			<div className={cn("text-secondary md:mt-2")}>
+			<div className={cn("text-secondary mt-2")}>
 				I love building fun things here are some of my works
 			</div>
-			<div className="md:mt-6 grid md:grid-cols-3 sm:grid-cols-1 sm:flex-row sm:items-center sm:justify-center sm:gap-4 xs:grid-cols-1 xs:flex-row xs:items-center xs:justify-center xs:gap-4">
+			<div className="mt-6 grid items-center justify-center md:grid-cols-3 sm:grid-cols-1 sm:flex-row sm:items-center sm:justify-center sm:gap-4 xs:grid-cols-1 xs:flex-row xs:items-center xs:justify-center xs:gap-4">
 				<CardFlip
 					title="Edusity Landing page"
 					subtitle="A Landing page for educational institute"

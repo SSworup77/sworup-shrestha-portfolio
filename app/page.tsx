@@ -5,9 +5,9 @@ import TechStack from "./components/TechStack";
 
 export default function Home() {
 	return (
-		<div className="flex min-h-screen items-start justify-start">
+		<div className="flex min-h-screen items-start justify-start ">
 			<Container className="min-h-[200vh] p-4 md:p-10">
-				<h1 className="font-bold tracking-tight text-2xl md:text-4xl sm:text-3xl sm:mt-16 md:mt-14 text-primary">
+				<h1 className="font-bold tracking-tight text-2xl md:text-4xl sm:text-3xl md:mt-14 sm:mt-15 xs:mt-30 text-primary">
 					Hello there!
 				</h1>
 				<p className="text-secondary text-sm md:text-base pt-4 max-w-xl">
