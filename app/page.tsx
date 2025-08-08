@@ -2,11 +2,12 @@ import Image from "next/image";
 import Container from "./components/container";
 import Projects from "./components/Projects";
 import TechStack from "./components/TechStack";
+import Footer from "./components/footer/Footer";
 
 export default function Home() {
 	return (
 		<div className="flex min-h-screen items-start justify-start ">
-			<Container className="min-h-[200vh] p-4 md:p-10">
+			<Container className="min-h-screen p-4 md:p-10">
 				<h1 className="font-bold tracking-tight text-2xl md:text-4xl sm:text-3xl md:mt-14 sm:mt-15 xs:mt-30 text-primary">
 					Hello there!
 				</h1>
@@ -22,6 +23,7 @@ export default function Home() {
 				</p>
 				<TechStack />
 				<Projects />
+				<Footer/>
 			</Container>
 		</div>
 	);
