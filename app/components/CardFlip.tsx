@@ -153,18 +153,22 @@ export default function CardFlip({
 							)}
 						>
 							<div className="flex items-center gap-4 text-primary">
-								<SmallButton
-									href={githubLink}
-									icon={Github}
-									size={20}
-									external={true}
-								/>
-								<SmallButton
-									href={liveLink}
-									icon={Globe}
-									size={20}
-									external={true}
-								/>
+								{githubLink && (
+									<SmallButton
+										href={githubLink}
+										icon={Github}
+										size={20}
+										external={true}
+									/>
+								)}
+								{liveLink && (
+									<SmallButton
+										href={liveLink}
+										icon={Globe}
+										size={20}
+										external={true}
+									/>
+								)}
 							</div>
 						</div>
 					</div>

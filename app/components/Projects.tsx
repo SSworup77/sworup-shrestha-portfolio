@@ -28,6 +28,13 @@ const Projects = () => {
 					githubLink="https://github.com/SSworup77/Online-Editor"
 					liveLink="https://online-editor-iota.vercel.app/"
 				/>
+				<CardFlip
+					title="FontForge"
+					subtitle="An google fonts like font tester application"
+					description="The Font Forge font tester is a web application that allows users to preview and test different fonts in real-time, helping them choose the perfect typography for their projects."
+					image="/font-tester.png"
+					githubLink="https://github.com/SSworup77/UBA-font-tester"
+				/>
 			</div>
 		</div>
 	);
